@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenLife - Cây cảnh</title>
+<style>
+body {font-family: Arial; margin:0; background:#f4fff4;}
+header {background:#2e7d32; color:white; padding:20px; text-align:center;}
+nav {background:#388e3c; padding:10px; text-align:center;}
+nav a {color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+section {padding:30px; text-align:center;}
+.card {background:white; padding:15px; margin:15px; border-radius:15px; display:inline-block; width:260px; box-shadow:0 4px 10px rgba(0,0,0,0.1);} 
+.card img {width:100%; border-radius:10px;}
+button {background:#2e7d32; color:white; border:none; padding:10px; border-radius:5px; cursor:pointer; margin-top:10px;}
+button:hover {background:#1b5e20;}
+footer {background:#2e7d32; color:white; text-align:center; padding:15px;}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🌿 GreenLife</h1>
+<p>Mang thiên nhiên vào không gian sống</p>
+</header>
+
+<nav>
+<a href="#home">Trang chủ</a>
+<a href="#products">Sản phẩm</a>
+<a href="#order">Đặt hàng</a>
+<a href="#contact">Liên hệ</a>
+</nav>
+
+<section id="home">
+<h2>Chào mừng đến với GreenLife</h2>
+<p>Shop chuyên cung cấp cây cảnh đẹp, dễ chăm sóc, giao hàng tận nơi.</p>
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" width="80%">
+</section>
+
+<section id="products">
+<h2>Sản phẩm nổi bật</h2>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593691509543-c55fb32c5b54">
+<h3>Cây Kim Tiền</h3>
+<p>150.000đ</p>
+<button onclick="scrollToOrder()">Đặt hàng</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb">
+<h3>Cây Lưỡi Hổ</h3>
+<p>120.000đ</p>
+<button onclick="scrollToOrder()">Đặt hàng</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<h3>Sen đá</h3>
+<p>80.000đ</p>
+<button onclick="scrollToOrder()">Đặt hàng</button>
+</div>
+
+</section>
+
+<section id="order">
+<h2>🛒 Đặt hàng</h2>
+<p>Điền thông tin bên dưới để đặt hàng:</p>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDUMMYFORM/viewform?embedded=true" width="100%" height="600" frameborder="0">Đang tải…</iframe>
+
+</section>
+
+<section id="contact">
+<h2>Liên hệ</h2>
+<p>SĐT: 09xxxxxxxx</p>
+<p>Zalo: 09xxxxxxxx</p>
+<p>Facebook: fb.com/greenlife</p>
+</section>
+
+<footer>
+<p>© 2026 GreenLife</p>
+</footer>
+
+<script>
+function scrollToOrder() {
+  document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
